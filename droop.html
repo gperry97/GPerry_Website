@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- documentation at http://getbootstrap.com/docs/4.1/, alternative themes at https://bootswatch.com/ -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+        <title>Gabriella Elyse Perry</title>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-light" style="background-color: 	#ffffff">
+            <a class="navbar-brand">Gabriella Elyse Perry</a>
+            <button aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbar" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto mt-2">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Work</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    </ul>
+            </div>
+        </nav>
+        <hr>
+        <div class="row-h">
+            <div class="column100">
+                <h5>Droop</h5>
+                <h4>Simulating the Robotic Deposition of Draped Material</h4>
+                <hr style="height:0.25px;border-width:0;margin-top: 1em;margin-bottom: 0.5em;color:white;background-color:white">
+                <p>Harvard's Graduate School of Design, VIS-6338 Introduction to Computational Design, Fall 2020</p>
+                <hr style="height:0.25px;border-width:0;margin-top: 0.5em;margin-bottom: 0.5em;color:white;background-color:white">
+                <p>Droop is an iterative design tool that uses C#/Grasshopper and rhino for simulating the robotic draping of extruded molten plastic over a form. The inspiration for droop came from the author's previous research at Virginia Tech's Center for Design, exploring non-layered additive fabrication processes. </p>
+                <hr style="height:1px;border-width:0;color:white;background-color:white">
+                <p>Similar to Gaudi's chain catenary curve models, this process is influenced mainly by droop weight and the force of gravity. However, the draping process is unique in that the plastic material starts as a malleable rope that hardens to a rigid object once cooled. The hardening property also allows previously printed droops to support new droops. </p>
+                <hr style="height:1px;border-width:0;color:white;background-color:white">
+                <p>Droop works by dividing a polyline into the individual line segments. Then it takes each line and divides it into a series of nodes and springs, which are added to a "droop" class. Finally, gravity and all the spring forces are applied to each node. Each droop has a birth age, which staggers the start of gravity to visualize the printing process over time. The Nodes also have an age that decreases every time the droop is updating, once a node is "dead" it no longer moves. This property visualizes the hardened droop. As this project continues in the author's research, they will address limitations with collisions and node division.
+                 </p>
+            </div>
+        </div>
+        <div class="row-h">
+            <div class="column100">
+                <iframe src="https://www.youtube.com/embed/OU6qtk0TfEw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column100">
+              <img src="static\img\droop spring diagram.png" alt="IMG1">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column100">
+              <img src="static\img\heroImageFINAL.jpg" alt="IMG1">
+            </div>
+        </div>
+        <div class="row-h">
+            <div class="column50">
+                <img src="static\img\InvertedDroops1_Final.jpg" alt="IMG2">
+            </div>
+            <div class="column50">
+                <img src="static\img\InvertedDroops2_Final.jpg" alt="IMG3">
+            </div>
+        </div>
+        <div class="row-h">
+            <div class="column50">
+                <img src="static\img\droop_collision.png" alt="IMG4">
+            </div>
+            <div class="column50">
+                <img src="static\img\droop_delay.png" alt="IMG5">
+            </div>
+        </div>
+        <div class="row">
+            <div class="column100">
+                <img src="static\img\steps_final.jpg" alt="IMG6">
+            </div>
+        </div>
+    </body>
+</html>
