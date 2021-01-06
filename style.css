@@ -194,6 +194,20 @@ h4
     height: 100%;
 }
 
+.pdf-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+
+.pdf-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .row-h 
 {
     display: flex;
@@ -245,6 +259,16 @@ h4
     vertical-align: middle;
 }
 
+.column33A img
+{
+    flex: 33%;
+    max-width: 100%;
+    padding: 0.5%;
+    vertical-align: middle;
+    -ms-flex-align: end;
+}
+
+
 .column33 p
 {
     flex: 33%;
@@ -279,6 +303,18 @@ h4
     vertical-align: middle;
 }
 
+.column66A
+{
+    flex: 66%;
+    max-width: 100%;
+    padding-right: 10%;
+    vertical-align: top;
+    font-family: Nunito;
+    font-size: 12pt;
+    text-align: left;
+    color: #2B2D42;
+}
+
 .column50 
 {
     flex: 50%;
@@ -287,9 +323,31 @@ h4
     vertical-align: middle;
 }
 
+.column50 p
+{
+    flex: 50%;
+    max-width: 100%;
+    padding-right: 5%;
+    vertical-align: top;
+    font-family: Nunito;
+    font-size: 11pt;
+    text-align: left;
+    color: #2B2D42;
+}
+
+
 .column50 img
 {
     flex: 100%;
+    max-width: 100%;
+    padding: 0.5%;
+    vertical-align: middle;
+}
+
+.column50A img
+{
+    flex: 100%;
+    float: right;
     max-width: 100%;
     padding: 0.5%;
     vertical-align: middle;
