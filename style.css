@@ -1,8 +1,8 @@
 body 
 {
     border: 2rem solid white;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 9%;
+    padding-right: 9%;
 }
 
 nav .navbar-brand
@@ -29,6 +29,10 @@ nav .nav-link
     padding-right: 1rem;
     padding-top: 0.25rem;
     text-align: left;
+}
+
+.dropdown-backdrop {
+    position: static;
 }
 
 /*Image Selection*/
@@ -64,7 +68,7 @@ nav .nav-link
   
 .text {
     color: black;
-    font-family: Nunito;
+    font-family: Helvetica, Light;
     font-weight: 300;
     font-size: 14pt;
     text-align: center;
@@ -81,86 +85,86 @@ hr.new1 {
 
 .h2 
 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Helvetica, Regular;
     text-align: center;
-    color: #2B2D42;
+    color: black;
 }
 
 title
 {
-    font-family: Roboto, Bold;
-    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif, Bold;
+    font-weight: 600;
     font-size: 16pt;
     text-align: center;
     align-items: center;
-    color: #2B2D42;
+    color: black;
 }
 
 .navbar-brand
 {
-    font-family: Roboto, "Bold";
+    font-family: Helvetica, Bold;
     font-weight: 500;
     font-size: 16pt;
     text-align: center;
     align-items: center;
-    color: #2B2D42;
+    color: black;
 }
 
 .nav-item
 {
-    font-family: Roboto, "Light";
+    font-family: Helvetica, "Light";
     font-weight: 400;
     font-size: 14pt;
     text-align: center;
     align-items: center;
-    color: #2B2D42;
+    color: black;
 }
 
 h6
 {
-    font-family: Roboto, Bold;
+    font-family: Helvetica, Bold;
     font-weight: 500;
     font-size: 16pt;
     text-align: center;
     align-items: center;
-    color: #2B2D42;
+    color: black;
 }
 
 h5
 {
-    font-family: Roboto, Light;
+    font-family: Helvetica, Light;
     font-style: oblique;
     font-weight: 400;
     font-size: 14pt;
     text-align: left;
-    color: #2B2D42;
+    color: black;
 }
 
 h5-t
 {
-    font-family: Roboto, Light;
-    font-weight: 300;
+    font-family: Helvetica, "Light";
+    font-weight: 200;
     font-size: 14pt;
     padding: 0.5rem;
     text-align: left;
-    color: #2B2D42;
+    color: grey;
 }
 
 h4
 {
-    font-family: Roboto, Light;
+    font-family: Helvetica, Light;
     font-weight: 400;
     font-size: 12pt;
     text-align: left;
-    color: #2B2D42;
+    color: black;
 }
 
 .p 
 {
-    font-family: Nunito;
+    font-family: Helvetica, Light;
     font-size: 11pt;
     text-align: left;
-    color: #2B2D42;
+    color: black;
 }
 
 .row 
@@ -232,11 +236,11 @@ h4
     flex: 33%;
     max-width: 100%;
     vertical-align: middle;
-    font-family: "Roboto", "Light";
+    font-family: Helvetica, "Light";
     padding: 0.1%;
     font-size: 10pt;
     text-align: left;
-    color: #2B2D42;
+    color: black;
 }
 
 .column33
@@ -245,10 +249,10 @@ h4
     max-width: 100%;
     padding: 0.5%;
     vertical-align: middle;
-    font-family: "Roboto", "Light";
+    font-family: Helvetica, "Light";
     font-size: 10pt;
     text-align: left;
-    color: #2B2D42;
+    color: black;
 }
 
 .column33 img
@@ -274,7 +278,7 @@ h4
     flex: 33%;
     max-width: 100%;
     vertical-align: middle;
-    font-family: Nunito;
+    font-family: Helvetica;
     font-size: 11pt;
     text-align: left;
     color: #2B2D42;
@@ -309,7 +313,7 @@ h4
     max-width: 100%;
     padding-right: 10%;
     vertical-align: top;
-    font-family: Nunito;
+    font-family: Helvetica;
     font-size: 12pt;
     text-align: left;
     color: #2B2D42;
@@ -329,7 +333,7 @@ h4
     max-width: 100%;
     padding-right: 5%;
     vertical-align: top;
-    font-family: Nunito;
+    font-family: Helvetica;
     font-size: 11pt;
     text-align: left;
     color: #2B2D42;
@@ -375,7 +379,7 @@ h4
     flex: 100%;
     max-width: 100%;
     vertical-align: middle;
-    font-family: Nunito;
+    font-family: Helvetica;
     font-size: 11pt;
     text-align: left;
     color: #2B2D42;
