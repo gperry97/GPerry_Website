@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <title>Gabriella Perry</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<link rel="stylesheet" href="styleNEW.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+  <header class="w3-panel w3-center w3-opacity" style="padding-top:80px;padding-bottom: 20px;">
+    <!--<h1 class="w3-xlarge">Design Technology + Dig</h1> -->
+      <h1>Gabriella Perry</h1>
+    
+    <div class="w3-padding-10">
+      <div class="w3-bar w3-border">
+        <a href="index.html" class="w3-bar-item w3-button">Design Technology</a>
+        <a href="HTMAA_index.html" class="w3-bar-item w3-button w3-light-grey">How To Make (Almost) Anything</a>
+        <a href="Architecture.html" class="w3-bar-item w3-button">Architectural Studies</a>
+        <a href="personal_projects.html" class="w3-bar-item w3-button">Personal Projects</a>
+        <a href="work_experience.html" class="w3-bar-item w3-button">Work Experience</a>
+        <a href="About_New.html" class="w3-bar-item w3-button w3-hide-small">About</a>
+      </div>
+    </div>
+  </header>
+  
+<hr>
+
+
+<!-- Intro Text + Project Photo -->
+<div class="w3-row-padding" style="margin-bottom:16px">
+  <div class="w3-half">
+    
+    <!-- Introductory Text -->
+    <div class="container">
+      <h5>Networking</h5>
+                <hr style="height:0.25px;border-width:0;margin-top: 1em;margin-bottom: 0.5em;color:white;background-color:white">
+                <p style="font-size: large;">"design, build, and connect wired or wireless node(s) with network or bus addresses" </p>
+                <hr>
+      <p style="font-size: large;"> I do not plan to use networking within my final project, so I spent this week learning about ESPs and attempting to connect them to wifi, Bluetooth, and write to MicroSD cards. I worked with a couple of other people in my section (Suvin, Reuben, and Chris) to design the board with a micro SD card port and pull out some pins in case we wanted to connect it to input or output devices. The board is named " RGSC-102" which is the first initials of the collaborators and the room number of the Harvard lab.  </p>
+      <a href="static\esp32schematicnov17.sch">Download the KiCad Schematic</a>
+      <a href="static\esp32_test.kicad_pcb">Download the KiCad Traces</a>
+      <hr>
+                 </div>
+  </div>
+
+  <!-- Top Image -->
+  <div class="w3-half">
+    <div class="container">
+      <img src="static\ESPBoardStuffed.jpg" style="width:100%">
+    </div>
+  </div>
+</div>
+<hr>
+
+  <!-- Additional Imagery - Photo Grid -->
+  <div class="w3-row-padding" style="margin-bottom:16px">
+    <div class="w3-col">
+
+      <!-- ESP Board Design -->
+      <img src="static\ESPSchematic.JPG" style="width:100%">
+      <img src="static\ESPFootprints.JPG" style="width:100%">
+
+      <!-- Milled And Stuffed Baord -->
+      <hr>
+      <p style="font-size: large;"> The milling machine did not want to work with me this week, and I ended up milling like four boards, only one of which milled successfully. I almost successfully milled a second one until the machine dragged the endmill through the nicely cut traces right at the end of the cut...... I swear the Roland mill was mad at me for some reason. 
+
+        After soldering the board, I realized we had made a mistake in our design. The MicroSD card slot was flipped 180 degrees from the ideal position, and it was almost impossible to slide the card in. It looks like we will not be writing to the SD cards this week.  </p>
+       <hr>
+       <img src="static\ESPBoard-Success.jpg" style="width:100%">
+       <img src="static\ESPBoard-Failure.jpg" style="width:100%">
+
+       <!-- Running Programs on the ESP -->
+       <hr>
+       <p style="font-size: large;">I started with testing examples with the ESP board to make sure it worked. The first example from Arduino ESP32 I tested was just wifi scan, which gets the name of all wifi sources around. ESP boards have a switch and a button. The switch turns the board from programming mode to run mode. The button is a reset button to restart the program.</p>
+       <p style="font-size: large;">In run mode, you see the ESP scan for Wifi Networks and display the ones nearest to me.</p>
+       <hr>
+
+       <iframe width="100%" height="720" src="https://www.youtube.com/embed/nbby5TWO668" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <hr>
+       <p stlye="font-size: large">I also tested the ESP32 Bluetooth using <a href="http://academy.cba.mit.edu/classes/networking_communications/ESP32/hello.ESP32-WROOM.SPP.ino">Neils Arduino code.</a> I was able to run the code on my board and then connect my laptop to the device. I attempted to pair it with my iPhone, but the ESP was not showing up as a pairable device. I downloaded several Bluetooth terminal apps to connect to my ESP32, but I was still unable to get my phone to connect.</p>
+      <hr>
+      <img src="static\ESPBluetoothLaptop.jpg" style="width:100%">
+
+      <!-- Communicating with a firebase database -->
+      <hr>
+       <p stlye="font-size: large"> Chris Wang in our section sent out a very helpful tutorial on <a href="https://randomnerdtutorials.com/esp32-firebase-realtime-database/">Real time communication with an ESP using a Firebase Database.</a> The website gives an in-depth tutorial to download the libraries and write code for wireless communication with a database. The tutorial code allows you to pass integers from the database to the ESP that can be read via the serial monitor in the Arduino IDE.</p>
+      <hr>
+      <iframe width="100%" height="720" src="https://www.youtube.com/embed/JF-vw6VyA3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    </div>
+  </div>
+
+  
+</div>
+
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
+  <!-- 
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  -->
+</footer>
+
+</body>
+</html>

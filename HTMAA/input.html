@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <title>Gabriella Perry</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<link rel="stylesheet" href="styleNEW.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+<body>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px">
+
+  <header class="w3-panel w3-center w3-opacity" style="padding-top:80px;padding-bottom: 20px;">
+    <!--<h1 class="w3-xlarge">Design Technology + Dig</h1> -->
+      <h1>Gabriella Perry</h1>
+    
+    <div class="w3-padding-10">
+      <div class="w3-bar w3-border">
+        <a href="index.html" class="w3-bar-item w3-button w3-light-grey"> How to Make [almost] Anything!</a>
+        <a href="about.html" class="w3-bar-item w3-button w3-light-grey"> About Me </a>
+        <a href="Sketches.html" class="w3-bar-item w3-button w3-light-grey"> Final Project </a>
+  
+        <!-- Header for Integrating into Personal Website 
+        <a href="Architecture.html" class="w3-bar-item w3-button">Architectural Studies</a>
+        <a href="personal_projects.html" class="w3-bar-item w3-button">Personal Projects</a>
+        <a href="work_experience.html" class="w3-bar-item w3-button">Work Experience</a>
+        <a href="About_New.html" class="w3-bar-item w3-button w3-hide-small">About</a>
+        -->
+      </div>
+    </div>
+  </header>
+  
+<hr>
+
+
+<!-- Intro Text + Project Photo -->
+<div class="w3-row-padding" style="margin-bottom:16px">
+  <div class="w3-half">
+    
+    <!-- Introductory Text -->
+    <div class="container">
+      <h5>Input devices</h5>
+                <hr style="height:0.25px;border-width:0;margin-top: 1em;margin-bottom: 0.5em;color:white;background-color:white">
+                <p style="font-size: large;">"measure something: add a sensor to a microcontroller board that you have designed and read it" </p>
+                <p> Two weeks ago during embedded programming week I started working with input and output devices. <a href="Embedded.html">Check out the Tangibelt project from Embedded Programming Week!</a></p>
+                <p> This week I wanted to test out touch/capacitive sensing. Since I had previously programmed sensors I was not super worried, but a lot ended up going wrong this week.</p>
+                <p>Two weeks ago I designed an Arduino style board that pulls all the pins on my controller out so I can test various devices without having to remake my board. I named this board a Goober since it's a silly little testing board that can do many many things. I made three Goober boards, two with an ATtiny 1614 microcontroller and one with an ATtiny 1624 microcontroller. </p>
+              </div>
+  </div>
+
+  <!-- Top Image -->
+  <div class="w3-half">
+    <div class="container">
+      <img src="static\etupforcapacitive.jpg" style="width:100%">
+    </div>
+  </div>
+</div>
+<hr>
+
+  <!-- Additional Imagery - Photo Grid -->
+  <div class="w3-row-padding" style="margin-bottom:16px">
+    <div class="w3-col">
+
+      <!-- Goober Board Design -->
+      <img src="static\GooberBoard.jpg" style="width:100%">
+
+      <!-- Failure -->
+      <hr>
+      <p style="font-size: large;">I like working with the ATtiny's since I can power the board and program it using one pin and a CH340 USB to TTL Converter. Usually, our lab has a CH340 convertor with a 4.7 K resister available for programming but this week, all of these programmers were nowhere to be found. I thought this wouldn't be a huge problem for two reasons. First, I wanted to buy/make my own programmer to more easily program my boards for my final project. Secondly, there are other types of these boards in the lab that theoretically worked the same way. </p>
+      <p style="font-size: large;">I found another board, the same model of the CH340 board I was previously using, and soldered a 4.7K resistor onto a wire to connect the programming pin. This is the same setup that had worked previously for the boards.... Except this time I got the error "UPDI initialization failed". I tried other kinds of boards with the same setup, and I got the same error again! I tested out using a diode, changing the resistor value, redownloading the microcontroller drivers... still no dice...</p>
+      <hr>
+      <img src="static\errorscreenshot.JPG" style="width:80%">
+      <img src="static\errorscreenshot.JPG" style="width:80%">
+      <img src="static\errorscreenshot.JPG" style="width:80%">
+      <img src="static\board.jpg" style="width:100%">
+      
+
+      <!-- Solution -->
+      <hr>
+      <p style="font-size: large;">Rob Hart helped me find a temporary solution to programming my Attiny boards. The solution was to take an FTDI cable, jam a diode between the Rx and Tx pin, and then plug-in power, ground, and the Rx pin to my board....Somehow this semi-jank solution allowed me to program my board. Rob has also brought me a CH340 programmer now that I will keep safely in my electronics box for programming my final project. </p>
+      <hr>
+      <img src="static\jankdiode.jpg" style="width:100%">
+      <img src="static\jankcord1.jpg" style="width:100%">
+      <hr>
+      <p style="font-size: large;"> Now that I finally had a way to program my board, I used some sample code from <a href="https://roberthart56.github.io/SCFAB/SC_lab/Sensors/tx_rx_sensors/index.html">Rob Harts sensor page</a>, modified the pins to fit my board configuration, and programmed my board. Once that was all programmed, I connected a non-jank FTDI cord to my board via the serial pins and then connected a copper sticker and a megaohm resistor to my two pins. This worked swimmingly, and now I know how to make basic touch sensors!</p>
+      <hr>
+      <img src="static\etupforcapacitive.jpg" style="width:100%">
+      <iframe width="100%" height="720" src="https://www.youtube.com/embed/GbJ9Le0gDOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+      <!-- Video-->
+    </div>
+  </div>
+
+
+  <!-- Goober Board Design -->
+  
+</div>
+
+  
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-large"> 
+  <!-- 
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  -->
+</footer>
+
+</body>
+</html>
